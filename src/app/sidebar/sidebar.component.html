@@ -1,0 +1,15 @@
+<div class="sidebar">
+  <input #fileSelect type="file" (change)="onFileChange($event)" style="display: none;" />
+
+
+  <button (click)="fileSelect.click()" class="browsebutton">Browse Files</button>
+  <h3>Layers</h3>
+  <ul>
+    <li *ngFor="let item of files">
+      {{ item.file.name }}
+      <button (click)="onMoveUp(item.id)">Up</button>
+      <button (click)="onMoveDown(item.id)">Down</button>
+      <button (click)="onDelete(item.id)">Delete</button>
+    </li>
+  </ul>
+</div>

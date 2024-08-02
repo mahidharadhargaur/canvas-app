@@ -1,0 +1,16 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 25px 40px;
+  font-size: 16px;
+  border: solid green;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.main-container {
+  display: flex;
+}
+
+.canvas-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+canvas {
+  border: 1px solid black;
+}

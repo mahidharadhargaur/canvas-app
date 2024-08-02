@@ -1,0 +1,18 @@
+<div class="main-container">
+  <app-sidebar 
+    (fileSelected)="onFileSelected($event)" 
+    (deleteSelected)="onDeleteSelected($event)" 
+    (moveUpSelected)="onMoveUpSelected($event)"
+    (moveDownSelected)="onMoveDownSelected($event)">
+  </app-sidebar>
+  <div class="canvas-wrapper">
+    <canvas 
+      #canvas 
+      width="800" 
+      height="600" 
+      (mousedown)="onMouseDown($event)" 
+      (mouseup)="onMouseUp($event)" 
+      (mousemove)="onMouseMove($event)">
+    </canvas>
+  </div>
+</div>
